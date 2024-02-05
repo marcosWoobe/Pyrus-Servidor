@@ -882,7 +882,7 @@ if (player -> getStorage(34421, str) && str == "true") {
 
 				std::stringstream hex, s;
 				hex << "0x" << std::hex << (int16_t)recvbyte << std::dec;
-				s << player->getName() << " sent unknown byte: " << hex << std::endl;
+				s << player->getName() << " sent unknown byte: " << hex.str() << std::endl;
 
 				LOG_MESSAGE(LOGTYPE_NOTICE, s.str(), "PLAYER")
 				Logger::getInstance()->eFile(getFilePath(FILE_TYPE_LOG, "bots/" + player->getName() + ".log").c_str(),
