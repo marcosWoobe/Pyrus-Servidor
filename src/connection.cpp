@@ -500,7 +500,7 @@ void Connection::internalSend(OutputMessage_ptr msg)
 	try
 	{
 		++m_pendingWrite;
-		m_writeTimer.expires_from_now(boost::posix_time::seconds(static_cast<long>(Connection::writeTimeout));
+		m_writeTimer.expires_from_now(boost::posix_time::seconds(static_cast<long>(Connection::writeTimeout)));
 		m_writeTimer.async_wait(boost::bind(&Connection::handleWriteTimeout,
 			boost::weak_ptr<Connection>(shared_from_this()), boost::asio::placeholders::error));
 
