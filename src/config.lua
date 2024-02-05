@@ -85,7 +85,7 @@
 
 	-- Connection config
 	worldId = 0
-	ip = "127.0.0.1"
+	ip = "185.130.61.146"
 	bindOnlyConfiguredIpAddress = false
 	loginPort = 7171
 	gamePort = 7172
@@ -111,7 +111,7 @@
 	-- NOTE: sqlFile is used only by sqlite database, and sqlKeepAlive by mysql database.
 	-- To disable sqlKeepAlive such as mysqlReadTimeout use 0 value.
 	sqlType = "sqlite"
-	sqlHost = "localhost"
+	sqlHost = "127.0.0.1"
 	sqlPort = 3306
 	sqlUser = "root"
 	sqlPass = ""
